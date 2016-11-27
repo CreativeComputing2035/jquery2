@@ -11,9 +11,8 @@ $(document).ready(function(){ //Run the following after the page is ready.
     //This uses a shorthand way attaching a click handler.
     $("#myList li:nth-child(3)").click(myFunction2);
     $("#myList li:nth-child(4)").on("click", myFunction3);
-    var $square4 = $("#square4")
     $("#myList li:nth-child(5)").one("click", function(evt) {
-        myFunction4($square4);
+        myFunction4("#square4");
                                    });
     $("#square4").hide();
 });
